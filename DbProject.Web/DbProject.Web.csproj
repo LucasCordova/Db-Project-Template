@@ -1,5 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
+  <ItemGroup>
+    <ProjectReference Include="..\DbProject.Domain\DbProject.Domain.csproj" />
+    <ProjectReference Include="..\DbProject.Infrastructure.Ado\DbProject.Infrastructure.Ado.csproj" />
+    <ProjectReference Include="..\DbProject.Infrastructure.EntityFramework\DbProject.Infrastructure.EntityFramework.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>

@@ -25,24 +25,29 @@ Wrap up projects in a solution
   ```
 
 ## Added NuGet Package Dependencies
-Be sure to cd into the project's directory before issuing the add package command.
+Be sure to *cd* into each project's directory before issuing the add package command.
 
 ### DbProject.Console
 
+```txt
 1. dotnet add package Microsoft.Extensions.Configuration
 2. dotnet add package Microsoft.Extensions.Configuration.Json
 3. dotnet add package Microsoft.Extensions.Configuration.FileExtensions
+```
 
 ### DbProject.Infrastructure.Ado
 
+```txt
 1. dotnet add package System.Data.SqlClient
+```
 
 ### DbProject.Infrastructure.EntityFramework
 
+```txt
 1. dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 2. dotnet add package Microsoft.EntityFrameworkCore.Design
 
 You'll also want to install the .NET Core CLI Tools. Requires .NET Core SDK (you likely already have this if you've taken CS 366).
 
-dotnet tool install --global dotnet-ef
-
+   dotnet tool install --global dotnet-ef
+```

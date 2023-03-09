@@ -1,4 +1,12 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Models;
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("BikeStoreV2ContextConnection") ?? throw new InvalidOperationException("Connection string 'BikeStoreV2ContextConnection' not found.");
+
+builder.Services.AddDbContext<BikeStoreV2Context>(options => options.UseSqlServer(connectionString));
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<BikeStoreV2Context>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

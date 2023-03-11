@@ -1,0 +1,63 @@
+
+  Id     Duration CommandLine
+  --     -------- -----------
+   1        0.038 ls
+   2        0.007 cd .\Repos\
+   3        0.013 ls
+   4        0.007 cd .\Db-Project-Template\
+   5        0.009 ls
+   6     1:21.311 Install-Package Microsoft.AspnetCore.Diagnostics.EntityFrameworkCore
+   7        0.287 dotnet add package Microsoft.EntityFrameworkCore.Design
+   8        0.003 pwd
+   9        0.016 ls
+  10        0.001 cd .\DbProject.Web\
+  11        4.261 dotnet add package Microsoft.EntityFrameworkCore.Design
+  12        4.658 dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
+  13        4.971 dotnet add package Microsoft.AspNetCore.Identity.UI
+  14        3.894 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+  15        4.006 dotnet add package Microsoft.EntityFrameworkCore.Tools
+  16        0.002 pwd
+  17        5.280 dotnet aspnet-codegenerator identity -h
+  18        3.364 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+  19        3.156 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+  20        3.730 dotnet aspnet-codegenerator identity -h
+  21        0.021 explorer .
+  22        0.031 clear
+  23       14.611 dotnet ef dbcontext scaffold "Server=T-3000\SQLSERVERDEV22;Database=BikeStoreV2;Trusted_Connection=True;MultipleActiveResultSets…
+  24       14.272 dotnet aspnet-codegenerator identity -dc Models.BikeStoreV2Context --files "Account.Register;Account.Login"
+  25        0.009 ls
+  26        0.007 cd Areas
+  27        0.004 ls
+  28        0.011 cd .\Identity\
+  29        0.008 ls
+  30        0.008 cd Pages
+  31        0.007 ls
+  32        0.008 cd .\Account\
+  33        0.007 ls
+  34        0.002 pwd
+  35        0.011 cd ..\..\
+  36        0.002 pwd
+  37        0.009 cd ../
+  38        0.014 pwd
+  39        0.007 cd ..
+  40       15.182 dotnet build;
+  41        0.069 history >> Commands.txt
+  42        0.029 ls
+  43        0.011 cat .\Commands.txt
+  44        0.003 clear
+  45        1.644 dotnet ef dbcontext scaffold "Server=T-3000\SQLSERVERDEV22;Database=BikeStoreV2;Trusted_Connection=True;MultipleActiveResultSets…
+  46        8.732 dotnet ef dbcontext scaffold "Server=T-3000\SQLSERVERDEV22;Database=BikeStoreV2;Trusted_Connection=True;MultipleActiveResultSets…
+  47        0.007 pwd
+  48        0.015 cd ..\DbProject.Mvc\
+  49        8.907 dotnet ef dbcontext scaffold "Server=T-3000\SQLSERVERDEV22;Database=BikeStoreV2;Trusted_Connection=True;MultipleActiveResultSets…
+  50        0.001 pwd
+  51       19.915 dotnet aspnet-codegenerator controller -name OrderController -actions -nv -m Order -dc BikeStoreV2Context -outDir Controllers
+  52        8.114 dotnet aspnet-codegenerator view Index Index -outDir Views/Orders -udl -m Order
+  53        6.466 dotnet aspnet-codegenerator view List Index -outDir Views/Orders -udl -m Order
+  54        9.210 dotnet aspnet-codegenerator view Index List -outDir Views/Orders -udl -m Order
+  55        0.078 git status
+  56        0.408 git add .
+  57        0.065 git add .
+  58        0.484 git commit -m "Updated to class demo code"
+  59       17.363 git push
+

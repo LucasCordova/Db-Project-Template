@@ -3,23 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbProject.Console", "DbProject.Console\DbProject.Console.csproj", "{057DD3FC-701C-4E29-9A89-C39CABCE3023}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbProject.Console", "DbProject.Console\DbProject.Console.csproj", "{057DD3FC-701C-4E29-9A89-C39CABCE3023}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbProject.Domain", "DbProject.Domain\DbProject.Domain.csproj", "{188CB325-73F0-45B6-95E0-EBDEC520939F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbProject.Domain", "DbProject.Domain\DbProject.Domain.csproj", "{188CB325-73F0-45B6-95E0-EBDEC520939F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbProject.Infrastructure.Ado", "DbProject.Infrastructure.Ado\DbProject.Infrastructure.Ado.csproj", "{83B2FCB5-BEEB-4624-9005-9D60FFEFA5A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbProject.Infrastructure.Ado", "DbProject.Infrastructure.Ado\DbProject.Infrastructure.Ado.csproj", "{83B2FCB5-BEEB-4624-9005-9D60FFEFA5A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbProject.Infrastructure.EntityFramework", "DbProject.Infrastructure.EntityFramework\DbProject.Infrastructure.EntityFramework.csproj", "{F0AB9195-4265-411D-A467-B485DAE3B065}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbProject.Infrastructure.EntityFramework", "DbProject.Infrastructure.EntityFramework\DbProject.Infrastructure.EntityFramework.csproj", "{F0AB9195-4265-411D-A467-B485DAE3B065}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbProject.Web", "DbProject.Web\DbProject.Web.csproj", "{ED094EB2-8323-4AD6-BB65-D6AC4C67FE56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbProject.Web", "DbProject.Web\DbProject.Web.csproj", "{ED094EB2-8323-4AD6-BB65-D6AC4C67FE56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbProject.Mvc", "DbProject.Mvc\DbProject.Mvc.csproj", "{8D67F04F-499E-4768-B4DA-F01283B00F80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{057DD3FC-701C-4E29-9A89-C39CABCE3023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +41,12 @@ Global
 		{ED094EB2-8323-4AD6-BB65-D6AC4C67FE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED094EB2-8323-4AD6-BB65-D6AC4C67FE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED094EB2-8323-4AD6-BB65-D6AC4C67FE56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D67F04F-499E-4768-B4DA-F01283B00F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D67F04F-499E-4768-B4DA-F01283B00F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D67F04F-499E-4768-B4DA-F01283B00F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D67F04F-499E-4768-B4DA-F01283B00F80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
